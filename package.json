@@ -1,0 +1,20 @@
+{
+  "name": "goljs",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "~1.8.1"
+  },
+  "devDependencies": {
+    "gulp-browserify": "~0.3.3",
+    "node-static": "~0.7.3",
+    "gulp-stylus": "0.0.10",
+    "gulp-concat": "~2.1.7",
+    "gulp-util": "~2.2.12",
+    "gulp": "~3.4.0"
+  },
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}
