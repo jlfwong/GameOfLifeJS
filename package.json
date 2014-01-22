@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "chai": "~1.8.1"
+    "chai": "~1.8.1",
+    "lodash": "~2.4.1"
   },
   "devDependencies": {
     "gulp-browserify": "~0.3.3",

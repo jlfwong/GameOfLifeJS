@@ -48,7 +48,7 @@ gulp.task('default', function() {
     gulp.run('bundle-js');
   });
 
-  gulp.watch(['src/js/**/*-test.js'], function() {
+  gulp.watch(['src/js/**/*.js'], function() {
     gulp.run('bundle-js-tests');
   });
 
