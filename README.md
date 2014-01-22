@@ -1,6 +1,6 @@
 # JS Buzzword Game of Life
 
-![redlife](http://imgur.com/DtTGefP)
+![redlife](http://imgur.com/DtTGefP.png)
 
 Implementation of Conway's Game of Life in JavaScript
 
