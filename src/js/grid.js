@@ -10,6 +10,14 @@ var Grid = function(state) {
 Grid.LIVE = '#';
 Grid.DEAD = '.';
 
+Grid.random = function(width, height) {
+  return new Grid(_.range(height).map(function() {
+    return _.range(width).map(function() {
+      return (_.random(0, 1) === 1) ? Grid.LIVE : Grid.DEAD;
+    });
+  }));
+};
+
 Grid.prototype.isAlive = function(row, col) {
   if (row < 0 || row >= this.height) {
     return false;

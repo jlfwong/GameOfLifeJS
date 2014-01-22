@@ -3,18 +3,19 @@ var concat = require('gulp-concat');
 var gulp = require('gulp');
 var http = require('http');
 var nodeStatic = require('node-static');
+var reactify = require('reactify');
 var stylus = require('gulp-stylus');
 
 gulp.task('bundle-js', function() {
   gulp.src(['src/js/index.js'])
-    .pipe(browserify())
+    .pipe(browserify({transform: [reactify]}))
     .pipe(concat('index.js'))
     .pipe(gulp.dest("build/js"));
 });
 
 gulp.task('bundle-js-tests', function() {
   gulp.src(['src/js/**/*-test.js'])
-    .pipe(browserify())
+    .pipe(browserify({transform: [reactify]}))
     .pipe(concat('test.js'))
     .pipe(gulp.dest("build/js"));
 });
@@ -44,11 +45,11 @@ gulp.task('serve', function() {
 gulp.task('default', function() {
   gulp.run('build', 'serve');
 
-  gulp.watch(['src/js/**/*.js'], function() {
+  gulp.watch(['src/js/**/*.js', 'src/js/**/*.jsx'], function() {
     gulp.run('bundle-js');
   });
 
-  gulp.watch(['src/js/**/*.js'], function() {
+  gulp.watch(['src/js/**/*.js', 'src/js/**/*.jsx'], function() {
     gulp.run('bundle-js-tests');
   });
 

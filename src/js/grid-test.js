@@ -1,6 +1,6 @@
 var expect = require("chai").expect;
 
-var Grid = require("./grid");
+var Grid = require("./grid.js");
 
 describe('Grid', function() {
   it('has width and height properties', function() {
