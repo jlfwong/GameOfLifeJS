@@ -31,6 +31,6 @@ Hilarious buzzword bingo:
 [1]: http://learnboost.github.io/stylus/
 [2]: http://facebook.github.io/react/
 [3]: http://browserify.org/
-[4]: http://visionmedia.github.io/mocha/
+[4]: http://mochajs.org/
 [5]: http://chaijs.com/
 [6]: http://lodash.com/
